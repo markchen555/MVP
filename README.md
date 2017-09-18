@@ -1,14 +1,14 @@
 ## MVP 
 
-First project from the Front-End Web Developer Nanodegree in <a href="https://www.udacity.com" target="_blank">Udacity</a>:
+This is the MVP project <a href="https://www.hackreactor.com/" target="_blank">Hack Reactor</a>:
 <br>
-developed and personalized a responsive website with HTML5 and CSS3, from a provided PDF design mockup.
+Building full stack app from scratch.
 
 ---
 
 ### To run the application
 
-[Project Repo](https://github.com/markchen555/Portfolio)
+[Project Repo](https://github.com/markchen555/MVP)
 
 Fork a copy from my github or download the repository on your computer, unzip it and open `index.html` in your browser to see the working tests.
 
@@ -16,13 +16,17 @@ Fork a copy from my github or download the repository on your computer, unzip it
 
 ### MVP Info
 
-The version 2.0 site using the similar bootstrap layout with center of the body replaced with JavaScript photo slide show, static project section replaced with JavaScript anamited project brick, capabilities sectoin, footer and animated the whole site with implementaton of `animated.css` and `WOW.js`. My personal resume is also attached in the website.  
+Building full stack app with `React.js` for front end, `Express` for server and `ElephantSql` for server and `Postman` for testing.
 
 ---
 
 ### Reference
 
 - [Bootstrap](http://getbootstrap.com/)
+- [React.js](https://facebook.github.io/react/)
+- [Express.js](https://expressjs.com/)
+- [ElephantSql](https://www.elephantsql.com/)
+- [Postman](https://www.getpostman.com/)
 
 
 ---
@@ -30,4 +34,3 @@ The version 2.0 site using the similar bootstrap layout with center of the body 
 ### License
 
 The project is licensed under the [MIT license](license.txt).
-# MVP
