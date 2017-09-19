@@ -1,3 +1,38 @@
 .active {
   font-weight: bold;
 }
+
+.nav {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 0px 15px 0px
+}
+
+a {
+  padding-right: 25px;
+  text-decoration: none !important;
+}
+
+.single-task {
+  border-radius: 5px;
+  box-shadow: 0 2px 3px 0 rgba(225,225,225,0.50);
+}
+
+.task-section{
+  padding: 10px 0px 10px 35px;
+  margin: 5px 0px 5px 0px;
+}
+
+.remove-section {
+  padding: 10px 0px 10px 0px
+}
+
+.task-field {
+	margin: 20px 0px 20px 0px;
+}
+
+@media (min-width: 991px) {
+  .container {
+    max-width: 720px
+  }
+}

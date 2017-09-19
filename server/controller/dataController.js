@@ -29,7 +29,8 @@ module.exports = {
       }
     })
     .then(result => {
-      model.destory({
+      console.log('this is params ', req.params.dataId )
+      model.destroy({
         where: {
           id: req.params.dataId
         }
