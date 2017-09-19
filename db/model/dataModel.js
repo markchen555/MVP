@@ -2,10 +2,10 @@ const db = require('../db');
 const Sequelize = require('sequelize');
 
 const MVP = db.define('mvp', {
-  username: {
+  videoTitle: {
     type: Sequelize.STRING
   },
-  message: {
+  videoId: {
     type: Sequelize.STRING
   }
 }, {

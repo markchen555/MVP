@@ -2,16 +2,24 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import NavBar from './NavBar';
 import Home from './Home';
-import Main from './Main'
+import Favorite from './Favorite'
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state ={
+      videoId: null
+    }
+  }
+
   render() {
+
     return (
       <BrowserRouter>
-        <div>
+        <div className="container">
           <NavBar />
           <Route exact path='/' component={Home} />
-          <Route path='/main' component={Main} />
+          <Route path='/Favorite' component={Favorite} saveYouTube={this.saveYouTube}/>
         </div>
       </BrowserRouter>
     );

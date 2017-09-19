@@ -8,8 +8,8 @@ class NavBar extends Component {
         <NavLink exact activeClassName="active" to='/' >
           Home
         </NavLink>
-        <NavLink activeClassName="active" to='/main' >
-          Main
+        <NavLink activeClassName="active" to='/favorite' >
+          Favorite
         </NavLink>
       </div>
     );

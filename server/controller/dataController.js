@@ -12,8 +12,8 @@ module.exports = {
   },
   addData: (req, res) => {
     model.create({
-      username: req.body.username,
-      message: req.body.message
+      videoTitle: req.body.videoTitle,
+      videoId: req.body.videoId,
     })
     .then(data => {
       res.status(200).send(data);
