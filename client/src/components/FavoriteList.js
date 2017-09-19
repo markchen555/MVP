@@ -35,7 +35,7 @@ class FavoriteList extends Component {
             {!this.props.video ? <Loading /> : this.props.video.videoTitle}
           </div>
           <div className="col-sm-1 remove-section">
-            <button className="btn" onClick={() => this.deleteVideo()}>x</button>
+            <button className="btn remove-btn" onClick={() => this.deleteVideo()}>x</button>
           </div>
         </div>
       </div>

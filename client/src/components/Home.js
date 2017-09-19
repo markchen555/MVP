@@ -12,8 +12,8 @@ class Home extends Component {
       <div>
         <h1>{this.props.location}</h1>
         <h2>Weather: {this.props.weather}</h2>
-        <h2>Temperture: {this.props.temp}</h2>
-        <h2>From: {this.props.tempMax} To: {this.props.tempMin}</h2>
+        <h3>Temperture: {this.props.temp}</h3>
+        <h3>From: {this.props.tempMax} To: {this.props.tempMin}</h3>
       </div>
     );
   }

@@ -34,7 +34,7 @@ class App extends Component {
       params: {
         part: 'snippet',
         key: 'AIzaSyC4SWubXKHq46UfqeklCABDjmIJwdFLtnA',
-        q: this.state.weather + ` song`,
+        q: this.state.weather + ` chill music`,
         maxResults: 10,
         type: 'video',
         videoEmbeddable: 'true'
@@ -66,7 +66,7 @@ class App extends Component {
 
 
   getWeather() {
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Maryland&appid=b441a6ceb682e6d4997c3fbd50d17ef7')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Los_Angeles&appid=b441a6ceb682e6d4997c3fbd50d17ef7')
     .then((data) => {
       console.log('Successfully get data from weather api')
       console.log('this is data: ', data.data)
@@ -119,10 +119,13 @@ class App extends Component {
               
               <iframe className="embed-responsive-item" src={'https://www.youtube.com/embed/' + this.state.youtube_search_videoId + '?autoplay=1&loop=1&list=RDQMgEzdN5RuCXE'} allowFullScreen frameBorder="0" ></iframe>
             </div>
-            <button className="btn btn-primary" onClick={() => this.saveFaforite()} >Favorite</button>
+            <button className="btn btn-primary favorite-btn" onClick={() => this.saveFaforite()} >Favorite</button>
           </div>
           <Route exact path='/' component={() => (<Home location={this.state.location} weather={this.state.weather} temp={this.state.temp} tempMax={this.state.temp_max} tempMin={this.state.temp_min} />)} />
           <Route path='/Favorite' component={() => (<Favorite videos={this.state.youtube_stored_array} getVideos={this.getVideos} />)} />
+          <div className="footer container">
+            <p>&copy; 2017 Mark Chen for Hack Reactor  &nbsp;  | &nbsp; MVP &nbsp;</p>
+          </div>
         </div>
       </BrowserRouter>
     );
